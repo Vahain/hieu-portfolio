@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nguyen Van Hieu | Portfolio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- SPACE BACKGROUND -->
+
+<canvas id="bg"></canvas>
+
+<!-- CURSOR LIGHT -->
+
+<div id="cursor-light"></div>
+
+<!-- NAVBAR -->
+
+<nav class="nav">
+
+<div class="logo">NGUYEN VAN HIEU</div>
+
+<div class="menu">
+
+<button onclick="goSlide(0)">Home</button>
+<button onclick="goSlide(1)">About</button>
+<button onclick="goSlide(2)">Projects</button>
+<button onclick="goSlide(3)">Contact</button>
+
+</div>
+
+</nav>
+
+
+<!-- SLIDES -->
+
+<div class="slides">
+
+<!-- HOME -->
+
+<section class="slide hero">
+
+<div class="hero-container">
+
+<div class="hero-text">
+
+<h1 class="hero-name">
+Nguyen Van Hieu
+</h1>
+
+<h2 class="typing"></h2>
+
+<p class="hero-greeting">
+Hi, I'm Hieu 👋
+</p>
+
+<p class="hero-desc">
+Third-year IT student passionate about engineering design, AutoCAD drafting, and hardware optimization.
+</p>
+
+<div class="hero-buttons">
+
+<a href="https://github.com/Vahain" target="_blank" class="btn">
+GitHub
+</a>
+
+<a href="https://www.topcv.vn/xem-cv/CFxQUwcCA1gHVldQUAtdUgICAQRQAlYIVVMCBw2c44"
+target="_blank"
+class="btn-outline">
+
+View CV
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-avatar">
+
+<img src="assets/images/profile.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+<!-- ABOUT -->
+
+<section class="slide">
+
+<h2 class="title">About Me</h2>
+
+<div class="about-container">
+
+<p>
+I am a third-year Information Technology student with a strong interest in
+engineering design, technical drafting, and computer hardware systems.
+</p>
+
+<p>
+My experience includes creating technical drawings using AutoCAD,
+building and optimizing PC hardware, and exploring how software and
+hardware work together to improve performance and efficiency.
+</p>
+
+<p>
+I enjoy learning new technologies, solving technical problems,
+and continuously improving my engineering and programming skills.
+</p>
+
+<p>
+My goal is to develop practical solutions that combine
+software, hardware, and engineering design.
+</p>
+
+</div>
+
+
+<!-- SKILLS -->
+
+<div class="skills">
+
+<div class="skill">
+<i>⚙️</i>
+<span>AutoCAD</span>
+</div>
+
+<div class="skill">
+<i>💻</i>
+<span>HTML</span>
+</div>
+
+<div class="skill">
+<i>🎨</i>
+<span>CSS</span>
+</div>
+
+<div class="skill">
+<i>🧠</i>
+<span>JavaScript</span>
+</div>
+
+<div class="skill">
+<i>🖥</i>
+<span>Computer Systems</span>
+</div>
+
+<div class="skill">
+<i>🔧</i>
+<span>Hardware Optimization</span>
+</div>
+
+<div class="skill">
+<i>📐</i>
+<span>Technical Drawing</span>
+</div>
+
+<div class="skill">
+<i>⚡</i>
+<span>Problem Solving</span>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section class="slide">
+
+<h2 class="title">Projects</h2>
+
+<div class="project-grid">
+
+<!-- AUTOCAD PROJECT -->
+
+<div class="project-card">
+
+<img src="assets/projects/autocad/main.jpg" class="project-main">
+
+<h3>AutoCAD Engineering Drawing</h3>
+
+<p>
+Technical drawing project created using AutoCAD including
+mechanical layout and dimensioned engineering plans.
+</p>
+
+<div class="project-gallery">
+
+<img src="assets/projects/autocad/1.jpg">
+<img src="assets/projects/autocad/2.jpg">
+<img src="assets/projects/autocad/3.jpg">
+<img src="assets/projects/autocad/4.jpg">
+
+</div>
+
+<div class="project-links">
+
+<a href="https://drive.google.com/file/d/1lycevNhFbAQdzwg-I0OCWiiDon33lwKY/view?usp=sharing" target="_blank" class="btn-outline">
+View PDF
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ESP32 PROJECT -->
+
+<div class="project-card">
+
+<img src="assets/projects/esp32/robot.jpg" class="project-main">
+
+<h3>ESP32 Chatbot Face</h3>
+
+<p>
+A robotics project using ESP32 microcontroller
+with an animated chatbot face display and AI interaction.
+</p>
+
+<div class="project-gallery">
+
+<img src="assets/projects/esp32/face.jpg">
+<img src="assets/projects/esp32/code.jpg">
+
+</div>
+
+<div class="project-links">
+
+<a href="https://drive.google.com/file/d/1O0aWwBBF71Ab1V6Vj21h1raB3ozWtg60/view?usp=sharing" target="_blank" class="btn-outline">
+View Code
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="slide">
+
+<h2 class="title">Contact</h2>
+
+<div class="contact-grid">
+
+<a class="contact-card" href="mailto:yourgmail@gmail.com">
+
+<div class="contact-icon">📧</div>
+
+<div>
+<h3>Email</h3>
+<p>ngvalhieu@gmail.com</p>
+</div>
+
+</a>
+
+
+<a class="contact-card" href="tel:+849xxxxxxxx">
+
+<div class="contact-icon">📱</div>
+
+<div>
+<h3>Phone</h3>
+<p>+84 0962473806</p>
+</div>
+
+</a>
+
+
+<a class="contact-card" href="https://github.com/Vahain" target="_blank">
+
+<div class="contact-icon">💻</div>
+
+<div>
+<h3>GitHub</h3>
+<p>github.com/Vahain</p>
+</div>
+
+</a>
+
+
+<a class="contact-card"
+href="https://www.topcv.vn/xem-cv/CFxQUwcCA1gHVldQUAtdUgICAQRQAlYIVVMCBw2c44"
+target="_blank">
+
+<div class="contact-icon">📄</div>
+
+<div>
+<h3>Resume</h3>
+<p>View CV</p>
+</div>
+
+</a>
+
+</div>
+
+
+<div class="contact-qr">
+
+<p>Scan QR to view my portfolio</p>
+
+<img src="assets/images/qr-portfolio.png">
+
+</div>
+
+</section>
+
+</div>
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
