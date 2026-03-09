@@ -173,3 +173,40 @@ container.appendChild(card)
 })
 
 })
+function showCert(type){
+
+const box = document.getElementById("certificateBox");
+const title = document.getElementById("certTitle");
+const image = document.getElementById("certImage");
+const pdf = document.getElementById("certPDF");
+
+box.style.display = "flex";
+
+if(type === "autocad"){
+
+title.innerText = "AutoCAD Certificate";
+
+image.src = "certificates/autocad.png";
+
+pdf.href = "certificates/autocad.pdf";
+
+}
+
+if(type === "gemini"){
+
+title.innerText = "Google Gemini Certificate";
+
+image.src = "certificates/gemini.png";
+
+pdf.href = "certificates/gemini.pdf";
+
+}
+
+}
+function closeCert(){
+
+const box = document.getElementById("certificateBox");
+
+box.style.display = "none";
+
+}

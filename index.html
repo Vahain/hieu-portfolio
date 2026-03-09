@@ -136,9 +136,14 @@ software, hardware, and engineering design.
 
 <div class="skills">
 
-<div class="skill">
-<i>⚙️</i>
+<div class="skill" onclick="showCert('autocad')">
+<i>🖌</i>
 <span>AutoCAD</span>
+</div>
+
+<div class="skill" onclick="showCert('gemini')">
+<i>⭐</i>
+<span>Google Gemini</span>
 </div>
 
 <div class="skill">
@@ -177,6 +182,24 @@ software, hardware, and engineering design.
 </div>
 
 </div>
+
+<!-- CERTIFICATE PREVIEW -->
+<div id="certificateBox" class="certificate-box">
+
+<h3 id="certTitle"></h3>
+
+<img id="certImage" src="">
+
+<div class="cert-buttons">
+
+<a id="certPDF" target="_blank" class="btn">Open PDF</a>
+
+<button onclick="closeCert()" class="btn-outline">Close</button>
+
+</div>
+
+</div>
+
 
 </section>
 

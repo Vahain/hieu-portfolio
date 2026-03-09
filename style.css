@@ -251,6 +251,24 @@ align-items:center;
 gap:8px;
 }
 
+.skill{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:8px;
+
+}
+
+.skill-icon{
+
+width:28px;
+height:28px;
+
+object-fit:contain;
+
+}
+
 .skill i{
 font-size:26px;
 color:#22d3ee;
@@ -432,5 +450,94 @@ width:95%;
 .nav{
 padding:15px 20px;
 }
+
+}
+/* CERTIFICATE PREVIEW */
+
+.certificate-box{
+
+margin-top:40px;
+background:#111;
+
+padding:25px;
+
+border-radius:12px;
+
+display:none;
+flex-direction:column;
+align-items:center;
+
+gap:20px;
+
+width:80%;
+max-width:600px;
+
+box-shadow:0 0 15px #000;
+
+}
+
+.certificate-box h3{
+
+color:#22d3ee;
+
+}
+
+.certificate-box img{
+
+width:100%;
+max-width:500px;
+
+border-radius:8px;
+
+box-shadow:0 0 10px #000;
+
+}
+
+.cert-buttons{
+
+display:flex;
+gap:10px;
+
+}
+/* CERTIFICATE */
+
+.certificate-box{
+
+margin-top:40px;
+
+background:#111;
+
+padding:25px;
+
+border-radius:12px;
+
+display:none;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:20px;
+
+width:80%;
+max-width:600px;
+
+}
+
+.certificate-box img{
+
+width:100%;
+
+max-width:500px;
+
+border-radius:8px;
+
+}
+
+.cert-buttons{
+
+display:flex;
+
+gap:10px;
 
 }
