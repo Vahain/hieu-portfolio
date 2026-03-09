@@ -136,43 +136,7 @@ renderer.setSize(window.innerWidth, window.innerHeight)
 })
 
 
-/* ---------------- GITHUB PROJECT AUTO IMPORT ---------------- */
 
-fetch("https://api.github.com/users/Vahain/repos")
-
-.then(res=>res.json())
-
-.then(data=>{
-
-const container = document.getElementById("githubProjects")
-
-const repos = data
-.filter(repo => !repo.fork && !repo.private)
-.slice(0,4)
-
-repos.forEach(repo=>{
-
-const card=document.createElement("div")
-
-card.className="project-card"
-
-card.innerHTML=`
-
-<h3>${repo.name}</h3>
-
-<p>${repo.description || "GitHub Project"}</p>
-
-<a href="${repo.html_url}" target="_blank" class="btn-outline">
-View on GitHub
-</a>
-
-`
-
-container.appendChild(card)
-
-})
-
-})
 function showCert(type){
 
 const box = document.getElementById("certificateBox");
