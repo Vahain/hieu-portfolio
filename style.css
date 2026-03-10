@@ -182,31 +182,28 @@ margin-top:10px;
 
 /* HERO AVATAR */
 
-.hero-avatar img{
+.hero-avatar{
 width:260px;
 height:260px;
 border-radius:50%;
+overflow:hidden;
+position:relative;
+}
+
+.hero-avatar img{
+width:100%;
+height:100%;
+object-fit:cover;
+
+border-radius:50%;
 border:3px solid #22d3ee;
+
 box-shadow:
 0 0 15px #22d3ee,
-0 0 35px #22d3ee;
-animation:glowPulse 3s infinite ease-in-out;
-}
+0 0 35px #22d3ee,
+0 0 60px #22d3ee33;
 
-@keyframes glowPulse{
-
-0%{
-box-shadow:0 0 10px #22d3ee,0 0 20px #22d3ee;
-}
-
-50%{
-box-shadow:0 0 25px #22d3ee,0 0 50px #22d3ee;
-}
-
-100%{
-box-shadow:0 0 10px #22d3ee,0 0 20px #22d3ee;
-}
-
+animation:glowPulse 4s ease-in-out infinite;
 }
 
 /* ABOUT */
